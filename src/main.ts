@@ -1,7 +1,7 @@
-import { BrowserWindow } from 'electron';
+import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 
-export default class Main {
+class Main {
     // Keep on the reference of the main window object.
     static mainWindow: Electron.BrowserWindow | null;
     static application: Electron.App;
@@ -29,7 +29,7 @@ export default class Main {
         Main.mainWindow.loadFile(path.join(__dirname, '../index.html'));
     
         // Open the DevTools.
-        Main.mainWindow.webContents.openDevTools();
+        //Main.mainWindow.webContents.openDevTools();
     
         // Emitted when the window is closed.
         Main.mainWindow.on('closed', Main.onClosed);
@@ -58,3 +58,8 @@ export default class Main {
         }
     }
 }
+
+// In this file you can include the rest of your app's specific main process code.
+// You can also put them in separate file and require them here.
+
+Main.main(app, BrowserWindow);
