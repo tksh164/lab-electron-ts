@@ -2,6 +2,7 @@
   "name": "lab-electron-ts",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +12,8 @@
     "url": "git+https://github.com/tksh164/lab-electron-ts.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Takeshi Katano",
+  "license": "MIT License",
   "bugs": {
     "url": "https://github.com/tksh164/lab-electron-ts/issues"
   },
