@@ -7,7 +7,7 @@ class App {
     static application: Electron.App;
     static BrowserWindow: typeof BrowserWindow;
 
-    static main (app: Electron.App, browserWindow: typeof BrowserWindow) {
+    static init (app: Electron.App, browserWindow: typeof BrowserWindow) {
         App.BrowserWindow = browserWindow;
         App.application = app;
         App.application.on('window-all-closed', App.onWindowAllClosed);
@@ -62,4 +62,4 @@ class App {
 // In this file you can include the rest of your app's specific main process code.
 // You can also put them in separate file and require them here.
 
-App.main(app, BrowserWindow);
+App.init(app, BrowserWindow);
