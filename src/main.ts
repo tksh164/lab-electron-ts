@@ -2,14 +2,16 @@ import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 
 class App {
-    // Keep on the reference of the main window object.
-    static mainWindow: Electron.BrowserWindow | null;
     static application: Electron.App;
     static BrowserWindow: typeof BrowserWindow;
 
+    // Keep on the reference of the main window object.
+    static mainWindow: Electron.BrowserWindow | null;
+
     static init (app: Electron.App, browserWindow: typeof BrowserWindow) {
-        App.BrowserWindow = browserWindow;
         App.application = app;
+        App.BrowserWindow = browserWindow;
+
         App.application.on('window-all-closed', App.onWindowAllClosed);
         App.application.on('activate', App.onActivate);
         App.application.on('ready', App.onReady);
@@ -58,8 +60,5 @@ class App {
         }
     }
 }
-
-// In this file you can include the rest of your app's specific main process code.
-// You can also put them in separate file and require them here.
 
 App.init(app, BrowserWindow);
