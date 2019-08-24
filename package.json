@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/tksh164/lab-electron-ts/issues"
   },
-  "homepage": "https://github.com/tksh164/lab-electron-ts#readme"
+  "homepage": "https://github.com/tksh164/lab-electron-ts#readme",
+  "devDependencies": {
+    "electron": "^6.0.4"
+  }
 }
