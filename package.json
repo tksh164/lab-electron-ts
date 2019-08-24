@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tksh164/lab-electron-ts#readme",
   "devDependencies": {
-    "electron": "^6.0.4"
+    "electron": "^6.0.4",
+    "typescript": "^3.5.3"
   }
 }
