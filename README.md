@@ -1,1 +1,1 @@
-# lab-electron-ts
+# Lab for Electron with TypeScript
